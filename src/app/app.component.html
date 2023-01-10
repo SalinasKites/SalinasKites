@@ -1,0 +1,85 @@
+<header>
+  <div class="header--title--container">
+    <h1><span> Salinas Kite </span></h1>
+    <span class="cometa"> 🪁 </span>
+    <p>Welcome</p>
+    <a href="#aboutMe" title="direccionar a abajo" class="header--button">About us<span></span></a>
+  </div>
+</header>
+<main>
+  <section id="aboutMe" class="main-exchange-container">
+    <figure>
+      <img class="profilePhoto" src="../assets/img/profilePhoto.png" alt="Esta es mi foto de perfil">
+    </figure>
+    <div class="main-exchange-container--title">
+      <h2>🏄 Salinas Kites 🏄 </h2>
+      <p>Somos una escuela de kiteboarding en salinas del rey,
+        con <strong>+5</strong> años de experiencia dando felicidad a nuestros kiters a través de la
+        práctica del Kitesurf.</p>
+    </div>
+  </section>
+  <section class="main-product-detail">
+    <figure>
+      <img class="atom-ico" src="../assets/icons/sol.png" alt="Esta es la imagen un sol">
+    </figure>
+    <div class="product-detail-title">
+      <h2>Escuela local.</h2>
+    </div>
+    <section class="plans-container--slider">
+
+
+      <a *ngFor="let data of letrasTarjeta" href="" class="plans-container--card">
+        <div class="plan-infor-container">
+          <p><strong>{{data.texto}}</strong></p>
+        </div>
+      </a>
+    </section>
+
+  </section>
+  <section class="main-plans-container">
+    <figure>
+      <img class="atom-ico" src="../assets/icons/sol.png" alt="Esta es la imagen un sol">
+    </figure>
+    <div class="plans--title">
+      <h2>I have worked in :</h2>
+      <p>Some places where i have worked</p>
+    </div>
+    <section class="map">
+      <article class="plans-container--card">
+        <div class="plan-infor-container">
+          <figure class="compan-figure">
+            <img class="compan-ico" src="./assets/icons/Consware.svg" alt="Icono de consware">
+          </figure>
+        </div>
+      </article>
+    </section>
+  </section>
+</main>
+<footer>
+  <section class="left">
+    <figure>
+      <a href="https://linkedin.com/" title="link for linkedin" target="_blank">
+        <img class="iconFooter" src="./assets/icons/linkedin.svg" alt="Linkedin">
+      </a>
+    </figure>
+    <figure>
+      <a href="https://instagram.com/jro/" title="link for instagram" target="_blank">
+        <img class="iconFooter" src="./assets/icons/Instagram.svg" alt="Instagram">
+      </a>
+    </figure>
+    <figure>
+      <a href="https://wa.me/57301" title="link for WhatsApp" target="_blank">
+        <img class="iconFooter icowhatsapp" src="./assets/icons/ico-whatsapp.svg" alt="WhatsApp">
+      </a>
+    </figure>
+
+  </section>
+  <section class="copyright">
+    <div>
+      <p>Copyright © 2018 SalinasKite</p>
+    </div>
+  </section>
+
+</footer>
+
+<router-outlet></router-outlet>
