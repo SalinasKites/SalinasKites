@@ -3,5 +3,11 @@ export interface LetrasTarjeta {
     texto?: string;
     descripcion: string;
     literales?: string[];
-    link: string;
+    tagA: TagA;
+}
+
+interface TagA {
+    text: string;
+    href: string;
+    titulo: string;
 }

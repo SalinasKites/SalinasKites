@@ -37,15 +37,13 @@
           <ul>
             <li *ngFor="let lit of data?.literales">{{lit}}</li>
           </ul>
+          <mat-action-row>
+            <a class="btn-redict-wa" href="{{data.tagA.href}}" title="{{data.tagA.titulo}}"
+              target="_blank">{{data.tagA.text}}
+            </a>
+          </mat-action-row>
         </mat-expansion-panel>
       </mat-accordion>
-
-      <!-- 
-      <a *ngFor="let data of letrasTarjeta" href="" class="plans-container--card">
-        <div class="plan-infor-container">
-          <p><strong>{{data.texto}}</strong></p>
-        </div>
-      </a> -->
     </section>
 
   </section>
@@ -71,17 +69,18 @@
 <footer>
   <section class="left">
     <figure>
-      <a href="https://linkedin.com/" title="link for linkedin" target="_blank">
-        <img class="iconFooter" src="./assets/icons/linkedin.svg" alt="Linkedin">
+      <a href="https://www.facebook.com/profile.php?id=100079079694180&mibextid=ZbWKwL" title="link for facebook"
+        target="_blank">
+        <img class="iconFooter" src="./assets/icons/fb.png" alt="Facebook">
       </a>
     </figure>
     <figure>
-      <a href="https://instagram.com/jro/" title="link for instagram" target="_blank">
+      <a href="https://instagram.com/salinaskite?igshid=OGQ2MjdiOTE=" title="link for instagram" target="_blank">
         <img class="iconFooter" src="./assets/icons/Instagram.svg" alt="Instagram">
       </a>
     </figure>
     <figure>
-      <a href="https://wa.me/57301" title="link for WhatsApp" target="_blank">
+      <a href="https://wa.me/573002156944" title="link for WhatsApp" target="_blank">
         <img class="iconFooter icowhatsapp" src="./assets/icons/ico-whatsapp.svg" alt="WhatsApp">
       </a>
     </figure>
@@ -89,7 +88,7 @@
   </section>
   <section class="copyright">
     <div>
-      <p>Copyright © 2018 SalinasKite</p>
+      <p>Copyright © 2023 jrodrigu3</p>
     </div>
   </section>
 
