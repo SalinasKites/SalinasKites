@@ -12,7 +12,7 @@
       <img class="profilePhoto" src="../assets/img/profilePhoto.png" alt="Esta es mi foto de perfil">
     </figure>
     <div class="main-exchange-container--title">
-      <h2>🏄 Salinas Kites 🏄 </h2>
+      <h2>🏄 Salinas Kite 🏄 </h2>
       <p>Somos una escuela de kiteboarding en salinas del rey,
         con <strong>+5</strong> años de experiencia dando felicidad a nuestros kiters a través de la
         práctica del Kitesurf.</p>
@@ -26,13 +26,26 @@
       <h2>Escuela local.</h2>
     </div>
     <section class="plans-container--slider">
+      <mat-accordion class="accordion">
+        <mat-expansion-panel *ngFor="let data of letrasTarjeta" class="accordion--expasion-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title class="accordion--expasion-panel-title">{{data?.titulo}}</mat-panel-title>
+            <mat-panel-description class="accordion--expasion-panel-descriptions"> {{data?.descripcion}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>{{data?.texto}}</p>
+          <ul>
+            <li *ngFor="let lit of data?.literales">{{lit}}</li>
+          </ul>
+        </mat-expansion-panel>
+      </mat-accordion>
 
-
+      <!-- 
       <a *ngFor="let data of letrasTarjeta" href="" class="plans-container--card">
         <div class="plan-infor-container">
           <p><strong>{{data.texto}}</strong></p>
         </div>
-      </a>
+      </a> -->
     </section>
 
   </section>

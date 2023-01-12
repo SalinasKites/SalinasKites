@@ -8,17 +8,25 @@ import { LetrasTarjeta } from './interfaces/letras.interface';
 })
 export class AppComponent {
   title = 'salinasKites';
+  panelOpenState = false;
   public letrasTarjeta: LetrasTarjeta[] = [{
     link: "",
-    texto: "Quiero ser un kiter"
+    titulo: "Quiero ser un kiter",
+    descripcion: "descripción",
+    texto: "Curso basico de 10 horas",
+    literales: ['¿Que aprendes?', 'Conceptos basicos ventana de viento/Teoria/Control de cometa/Seguridad', 'Bodydrag', 'wartestard']
   },
   {
     link: "",
-    texto: "Ya soy un kiter"
+    titulo: "Ya soy un kiter",
+    descripcion: "descripción",
+    literales: ['Asistencia', 'Downwind', 'Renta de equipos']
   },
   {
     link: "",
-    texto: "Otros deportes"
+    titulo: "Otros deportes",
+    descripcion: "descripción",
+    literales: ['Paddle Board', 'Pesca deportiva']
   }
   ];
 

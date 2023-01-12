@@ -9,7 +9,10 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
-
+a {
+    color: #0044ff;
+    text-decoration: none;
+}
 
 header {
     position: relative;
@@ -528,11 +531,46 @@ main {
 .plans-container--slider {
     margin-top: -50px;
     display: flex;
+    justify-content: center;
     height: 256px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
+
+.accordion {
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.accordion--expasion-panel {
+    position: absolute;
+    background-color: var(--off-white);
+}
+
+.accordion--expasion-panel-title {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--orange-special);
+}
+
+.accordion--expasion-panel-descriptions {
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+
 
 footer {
     display: block;
@@ -578,10 +616,11 @@ footer .copyright {
     font-family: system-ui;
 }
 
-a {
-    color: #0044ff;
-    text-decoration: none;
-}
+
+
+
+
+
 
 @media (min-width: 700px) {
     .plans-container--slider {
@@ -600,4 +639,18 @@ a {
         width: 930px;
         margin: 0 auto;
     }
+}
+
+.mat-mdc-form-field+.mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
