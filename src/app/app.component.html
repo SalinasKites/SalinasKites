@@ -33,9 +33,9 @@
             <mat-panel-description class="accordion--expasion-panel-descriptions"> {{data?.descripcion}}
             </mat-panel-description>
           </mat-expansion-panel-header>
-          <p>{{data?.texto}}</p>
+          <p class="mat-expansion-li mat-expansion-title">{{data?.texto}}</p>
           <ul>
-            <li *ngFor="let lit of data?.literales">{{lit}}</li>
+            <li class="mat-expansion-li" *ngFor="let lit of data?.literales">{{lit}}</li>
           </ul>
           <mat-action-row>
             <a class="btn-redict-wa" href="{{data.tagA.href}}" title="{{data.tagA.titulo}}"

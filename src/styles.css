@@ -569,6 +569,15 @@ main {
     color: var(--black);
 }
 
+.mat-expansion-title {
+    font-size: 1.6rem;
+}
+
+.mat-expansion-li {
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .btn-redict-wa {
     background-color: #04AA6D;
     color: #ffffff;
