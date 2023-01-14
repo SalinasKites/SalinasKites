@@ -186,8 +186,8 @@ main {
 }
 
 .profilePhoto {
-    width: 230px;
-    height: 230px;
+    width: 270px;
+    height: 205px;
     margin: 0 auto;
     margin-bottom: 20px;
     /* background-image: url("./assets/img/myPhoto.jpg"); */
@@ -196,11 +196,11 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     border: none;
-    border-radius: 73px;
+    border-radius: 19px;
 }
 
 
-.main-exchange-container h2 {
+.main-exchange-container--title h2 {
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -208,7 +208,7 @@ main {
     color: var(--black);
 }
 
-.main-exchange-container p {
+.main-exchange-container--title p {
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -281,28 +281,6 @@ main {
     line-height: 1.7rem;
     color: #757575;
 
-}
-
-.main-currency-table--container .down {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    /* background-image: url("../assets/icons/trending-down.svg"); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.main-currency-table--container .up {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
-    /* background-image: url("../assets/icons/trending-up.svg"); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .currency-table--date {
@@ -388,39 +366,12 @@ main {
 
 }
 
-.figure-icon {
-    justify-content: center;
-    text-align: center;
-}
-
-.jsicon {
-    width: 95px;
-    height: 80px;
-    margin: 0 auto;
-    /* background-image: url("./assets/img/myPhoto.jpg"); */
-    background-size: cover;
-    /* No se repita la imagen */
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.icon {
-    width: 115px;
-    height: 95px;
-    margin: 0 auto;
-    /* background-image: url("./assets/img/myPhoto.jpg"); */
-    background-size: cover;
-    /* No se repita la imagen */
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .product-cards--container {
     height: 336px;
     overflow-y: scroll;
-    overscroll-behavior-y: contain;
-    scroll-snap-type: y proximity;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .main-plans-container {
@@ -462,11 +413,10 @@ main {
     position: relative;
     scroll-snap-align: center;
     /* Centra las tarjetas */
-    width: 70%;
-    min-width: 190px;
+    width: 80%;
     max-width: 300px;
-    height: 170px;
-    margin: 50px 10px 0;
+    height: 242px;
+    margin: 30px 10px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -486,8 +436,8 @@ main {
 }
 
 .compan-ico {
-    width: 156px;
-    height: 150px;
+    width: 200px;
+    height: 193px;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
@@ -529,13 +479,14 @@ main {
 }
 
 .plans-container--slider {
-    margin-top: -50px;
+    margin-top: 29px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 256px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    height: 330px;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
 }
 
 .accordion {
@@ -569,13 +520,68 @@ main {
     color: var(--black);
 }
 
+.mat-expansion-panel-body {
+    height: auto;
+}
+
+.mat-expansion-panel-header {
+    height: auto;
+}
+
+.mat-expansion-panel-header-img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 2px;
+    left: calc(50% - 30px);
+}
+
+.mat-content {
+    height: 100px;
+}
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.information-h2 {
+    display: flex;
+    justify-content: center;
+    width: 92%;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    margin-left: -10px;
+    color: var(--black);
+}
+
+.information-p {
+    width: 90%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #180808;
+    margin: 10px 0 8px 5px;
+}
+
+.information-ul{
+    width: 80%;
+    left: 10px;
+    margin-left: 20px;
+}
+
 .mat-expansion-title {
     font-size: 1.6rem;
 }
 
 .mat-expansion-li {
-    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 2px;
+/*     font-weight: bold;
     font-family: 'Source Sans Pro', sans-serif;
+ */
 }
 
 .btn-redict-wa {

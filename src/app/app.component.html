@@ -9,10 +9,9 @@
 <main>
   <section id="aboutMe" class="main-exchange-container">
     <figure>
-      <img class="profilePhoto" src="../assets/img/profilePhoto.png" alt="Esta es mi foto de perfil">
+      <img class="profilePhoto" src="../assets/img/salinaKitesPrincipal.png" alt="Esta es mi foto de perfil">
     </figure>
     <div class="main-exchange-container--title">
-      <h2>🏄 Salinas Kite 🏄 </h2>
       <p>Somos una escuela de kiteboarding en salinas del rey,
         con <strong>+5</strong> años de experiencia dando felicidad a nuestros kiters a través de la
         práctica del Kitesurf.</p>
@@ -26,24 +25,14 @@
       <h2>Escuela local.</h2>
     </div>
     <section class="plans-container--slider">
-      <mat-accordion class="accordion">
-        <mat-expansion-panel *ngFor="let data of letrasTarjeta" class="accordion--expasion-panel">
-          <mat-expansion-panel-header>
-            <mat-panel-title class="accordion--expasion-panel-title">{{data?.titulo}}</mat-panel-title>
-            <mat-panel-description class="accordion--expasion-panel-descriptions"> {{data?.descripcion}}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <p class="mat-expansion-li mat-expansion-title">{{data?.texto}}</p>
-          <ul>
-            <li class="mat-expansion-li" *ngFor="let lit of data?.literales">{{lit}}</li>
-          </ul>
-          <mat-action-row>
-            <a class="btn-redict-wa" href="{{data.tagA.href}}" title="{{data.tagA.titulo}}"
-              target="_blank">{{data.tagA.text}}
-            </a>
-          </mat-action-row>
-        </mat-expansion-panel>
-      </mat-accordion>
+
+      <div class="information" *ngFor="let data of letrasTarjeta">
+        <h2 class="information-h2">{{data?.titulo}} </h2>
+        <p class="information-p">{{data?.texto}}</p>
+        <ul class="information-ul">
+          <li class="mat-expansion-li" *ngFor="let lit of data?.literales">{{lit}}</li>
+        </ul>
+      </div>
     </section>
 
   </section>
@@ -59,7 +48,9 @@
       <article class="plans-container--card">
         <div class="plan-infor-container">
           <figure class="compan-figure">
-            <img class="compan-ico" src="./assets/icons/Consware.svg" alt="Imagen del mapa">
+            <a href="" title="link for facebook" target="_blank">
+              <img class="compan-ico" src="../assets/icons/google_maps-tile.svg" alt="Imagen del mapa">
+            </a>
           </figure>
         </div>
       </article>

@@ -13,7 +13,7 @@ export class AppComponent {
 
   public letrasTarjeta: LetrasTarjeta[] = [{
     tagA: {
-      href: this.linkWhatsApp('Buenas, estoy interesado en ser un kiter'),
+      href: this.linkWhatsApp('Buenas, estoy interesado en ser un kiter.'),
       text: 'Contactanos',
       titulo: 'Quiero Aprender'
     },
@@ -24,17 +24,18 @@ export class AppComponent {
   },
   {
     tagA: {
-      href: this.linkWhatsApp("Ya soy un kiter, me gustaría saber un poco más de tus servicios"),
+      href: this.linkWhatsApp("Ya soy un kiter, me gustaría saber un poco más de tus servicios."),
       text: 'Contactanos',
       titulo: 'ya soy kiter'
     },
     titulo: "Ya soy un kiter",
+    texto: "¿Que ofrecemos?",
     descripcion: "descripción",
     literales: ['Asistencia', 'Downwind', 'Renta de equipos']
   },
   {
     tagA: {
-      href: this.linkWhatsApp("Buenas, Me gustaría saber un poco más sobre los otros deportes"),
+      href: this.linkWhatsApp("Buenas, Me gustaría saber un poco más sobre los otros deportes."),
       text: 'Contactanos',
       titulo: 'más deportes'
     },
