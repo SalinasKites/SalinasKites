@@ -20,7 +20,7 @@ export class AppComponent {
     titulo: "Quiero ser un kiter",
     descripcion: "descripción",
     texto: "Curso basico de 10 horas",
-    literales: ['¿Que aprendes?', 'Conceptos basicos ventana de viento/Teoria/Control de cometa/Seguridad', 'Bodydrag', 'wartestard']
+    literales: ['¿Que aprendes?', 'Conceptos basicos ventana de viento/Teoria/Control de cometa/Seguridad', 'Bodydrag', 'warterstard']
   },
   {
     tagA: {
@@ -31,7 +31,7 @@ export class AppComponent {
     titulo: "Ya soy un kiter",
     texto: "¿Que ofrecemos?",
     descripcion: "descripción",
-    literales: ['Asistencia', 'Downwind', 'Renta de equipos']
+    literales: ['Downwind', 'Alquiler de equipos kites', 'Kites', 'Arnés', 'Tablas']
   },
   {
     tagA: {
