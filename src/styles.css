@@ -366,7 +366,6 @@ main {
 
 }
 
-
 .product-cards--container {
     height: 336px;
     overflow-y: scroll;
@@ -550,10 +549,9 @@ main {
 .information-h2 {
     display: flex;
     justify-content: center;
-    width: 92%;
+    width: 100%;
     font-size: 2.5rem;
     line-height: 2.6rem;
-    margin-left: -10px;
     color: var(--black);
 }
 
