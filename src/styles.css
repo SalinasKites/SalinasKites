@@ -647,12 +647,13 @@ footer .copyright {
     font-size: 1.5rem;
     color: var(--just-white);
     font-family: system-ui;
+
+
 }
 
-
-
-
-
+footer .copyright a {
+    color: var(--just-white);
+}
 
 
 @media (min-width: 700px) {
