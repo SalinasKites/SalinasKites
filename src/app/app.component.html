@@ -25,13 +25,17 @@
       <h2>Escuela local.</h2>
     </div>
     <section class="plans-container--slider">
-
       <div class="information" *ngFor="let data of letrasTarjeta">
         <h2 class="information-h2">{{data?.titulo}} </h2>
         <p class="information-p">{{data?.texto}}</p>
         <ul class="information-ul">
           <li class="mat-expansion-li" *ngFor="let lit of data?.literales">{{lit}}</li>
         </ul>
+        <div class="div-btn-redict-wa">
+          <a class="btn-redict-wa" href="{{data.tagA.href}}" title="{{data.tagA.titulo}}"
+            target="_blank">{{data.tagA.text}}
+          </a>
+        </div>
       </div>
     </section>
 

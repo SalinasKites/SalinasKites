@@ -538,6 +538,7 @@ main {
 .mat-content {
     height: 100px;
 }
+
 .information {
     display: flex;
     flex-wrap: wrap;
@@ -546,6 +547,7 @@ main {
     width: 90%;
     margin-bottom: 20px;
 }
+
 .information-h2 {
     display: flex;
     justify-content: center;
@@ -564,7 +566,7 @@ main {
     margin: 10px 0 8px 5px;
 }
 
-.information-ul{
+.information-ul {
     width: 80%;
     left: 10px;
     margin-left: 20px;
@@ -577,9 +579,16 @@ main {
 .mat-expansion-li {
     font-size: 1.5rem;
     margin: 2px;
-/*     font-weight: bold;
+    /*     font-weight: bold;
     font-family: 'Source Sans Pro', sans-serif;
  */
+}
+
+.div-btn-redict-wa {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-redict-wa {
@@ -590,8 +599,9 @@ main {
     font-family: 'Source Sans Pro', sans-serif;
     padding-left: 19px;
     padding-right: 19px;
+    margin-top: 15px;
     border: 1px solid #cccccc;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 
