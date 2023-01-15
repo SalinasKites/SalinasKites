@@ -546,6 +546,9 @@ main {
     align-items: center;
     width: 90%;
     margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 10px;
 }
 
 .information-h2 {
