@@ -20,7 +20,7 @@ export class AppComponent {
     titulo: "Quiero ser un kiter",
     descripcion: "descripción",
     texto: "Curso basico de 10 horas",
-    literales: ['¿Que aprendes?', 'Conceptos basicos ventana de viento/Teoria/Control de cometa/Sistema de seguridad', 'Bodydrag/Navegar sin tabla', 'warterstard/Navegar con tabla']
+    literales: ['¿Que aprendes?', 'Conceptos basicos ventana de viento/Teoria/Control de cometa/Sistema de seguridad', 'Bodydrag/Navegar sin tabla', 'Warterstard/Navegar con tabla']
   },
   {
     tagA: {
