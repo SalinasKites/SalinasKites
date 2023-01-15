@@ -175,6 +175,7 @@ main {
     padding-top: 34px;
     padding-bottom: 30px;
     text-align: center;
+    background-color: black;
 }
 
 .main-exchange-container--title {
@@ -182,6 +183,7 @@ main {
     min-width: 288px;
     max-width: 800px;
     margin: 0 auto;
+    color: white;
     /* Se posiciona en el centro siempre */
 }
 
